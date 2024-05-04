@@ -1,12 +1,583 @@
-<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#set var="title" value="Сайт на Bootstrap 4 + BEM" -->
 <!--#include virtual="/parts/header.html" -->
 
-	<div style="max-width: 700px; margin: auto">
+<div id="toTop"><i class="fa fa-angle-up"></i></div>
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+<header class="menu-bar ">
+	<div class="container-fluid">
+
+		<div class="row justify-content-around">
+
+			<div class="col-lg-2 logo">
+				<div class="logo__name">My Landing</div>
+				<!--  d-lg-none отображается при разрешении меньше lg -->
+				<button class="logo__menu-icon d-lg-none"><i class="fa fa-bars"></i></button>
+			</div>
+			<!-- скрывается при lg разрешении -->
+			<div class="col-lg-8 ms-auto align-self-center d-none d-lg-block">
+				<nav class="top-menu">
+					<ul class="menu d-flex justify-content-end">
+						<li class="menu__item"><a href="/"><i class="fa fa-home"></i></a></li>
+						<li class="menu__item"><a class="link" href="#about">About</a></li>
+						<li class="menu__item"><a href="#services">Servicing</a></li>
+						<li class="menu__item"><a href="#price">Price</a></li>
+						<li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+						<li class="menu__item"><a href="#blog">Blog</a></li>
+						<li class="menu__item"><a href="#contact">Contact us</a></li>
+						<li class="menu__item"><i class="fa fa-search"></i></li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+
+	</div>
+</header>
+<header class="header" style="background-image: url(/images/dist/header.png)">
+	<div class="continer-fluid">
+		<div class="row">
+			<div class="col-xl-12">
+				<h1 class="header__title">Web development project</h1>
+				<p class="header__text">Very suitable to support all web development projects</p>
+				<button class="button">Our services</button>
+				<button class="button">Here is now</button>
+			</div>
+		</div>
+	</div>
+</header>
+<section class="about" id="about">
+
+		<div class="container-fluid">
+
+			<div class="row justify-content-center">
+
+				<div class="col-xl-8">
+					<div class="head-sect">
+						<h2 class="head-sect__title">About Us</h2>
+						<p class="head-sect__text">Lorem ipsum dolor sit amet, consectitur adipisicing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row justify-content-around">
+
+				<div class="col-xl-3 col-md-6">
+					<div class="item-1">
+						<img src="images/dist/awesome.png" alt="alt">
+						<h3 class="item-1__title">Awesome Icons</h3>
+						<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-md-6">
+					<div class="item-1">
+						<img src="images/dist/people.png" alt="alt">
+						<h3 class="item-1__title">One Page</h3>
+						<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					</div>
+				</div>
+
+				<div class="col-xl-3 col-md-6">
+					<div class="item-1">
+						<img src="images/dist/head.png" alt="alt">
+						<h3 class="item-1__title">Fully Responsive</h3>
+						<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+</section>
+
+<section class="services" id="services">
+	<div class="container-fluid">
+
+		<div class="row justify-content-center">
+
+			<div class="col-xl-8">
+				<div class="head-sect">
+					<h2 class="head-sect__title">Our Services</h2>
+					<p class="head-sect__text">Lorem ipsum dolor sit amet, consectitur adipisicing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-xl-4 col-md-6">
+				<div class="item-1 item-1_services">
+					<i class="fa fa-mobile"></i>
+					<h3 class="item-1__title">Research</h3>
+					<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					<button class="button-services">Our services</button>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-md-6">
+				<div class="item-1 item-1_services">
+					<i class="fa fa-mobile"></i>
+					<h3 class="item-1__title">Portfolio</h3>
+					<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					<button class="button-services">Our services</button>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-md-6">
+				<div class="item-1 item-1_services">
+					<i class="fa fa-mobile"></i>
+					<h3 class="item-1__title">Support</h3>
+					<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					<button class="button-services">Our services</button>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-md-6">
+				<div class="item-1 item-1_services">
+					<i class="fa fa-mobile"></i>
+					<h3 class="item-1__title">Documentation</h3>
+					<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					<button class="button-services">Our services</button>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-md-6">
+				<div class="item-1 item-1_services">
+					<i class="fa fa-mobile"></i>
+					<h3 class="item-1__title">Development</h3>
+					<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					<button class="button-services">Our services</button>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-md-6">
+				<div class="item-1 item-1_services">
+					<i class="fa fa-mobile"></i>
+					<h3 class="item-1__title">Design</h3>
+					<p class="item-1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor provident dolore ducimus vel eveniet explicabo.</p>
+					<button class="button-services">Our services</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<section class="portfolio" id="portfolio">
+	<div class="container-fluid">
+
+		<div class="row justify-content-center">
+
+				<div class="col-xl-8">
+					<div class="head-sect">
+						<h2 class="head-sect__title">Latest Works</h2>
+						<p class="head-sect__text">Lorem ipsum dolor sit amet, consectitur adipisicing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+					<button class="button button_green-border" val="off" filter="all">all</button>
+					<button class="button button_green-border" val="off" filter="web">Web Design</button>
+					<button class="button button_green-border" val="off" filter="uiux">Ui/Ux Design</button>
+					<button class="button button_green-border" val="off" filter="mocups">Mockups</button>
+				</div>
+
+		</div>
+
+		<div class="row portfolio__items filter">
+			<div filter="web" class="portfolio__item col-lg-4 col-md-6">
+				<div class="portfolio__item-img" style="background-image: url(images/dist/item2.png)"></div>
+				<div class="portfolio__item-text">
+					<h5>Hand Wath</h5>
+					<p>Web design</p>
+				</div>
+			</div>
+			<div filter="mocups" class="portfolio__item col-lg-4 col-md-6">
+				<div class="portfolio__item-img" style="background-image: url(images/dist/item2.png)"></div>
+				<div class="portfolio__item-text">
+					<h5>One Day Pass</h5>
+					<p>Mocups</p>
+				</div>
+			</div>
+			<div filter="web" class="portfolio__item col-lg-4 col-md-6">
+				<div class="portfolio__item-img" style="background-image: url(images/dist/item3.png)"></div>
+				<div class="portfolio__item-text">
+					<h5>Modal T-shirt</h5>
+					<p>Web design</p>
+				</div>
+			</div>
+			<div filter="mocups" class="portfolio__item col-lg-4 col-md-6">
+				<div class="portfolio__item-img" style="background-image: url(images/dist/item4.png)"></div>
+				<div class="portfolio__item-text">
+					<h5>Flask</h5>
+					<p>Mocups</p>
+				</div>
+			</div>
+			<div filter="uiux" class="portfolio__item col-lg-4 col-md-6">
+				<div class="portfolio__item-img" style="background-image: url(images/dist/item5.png)"></div>
+				<div class="portfolio__item-text">
+					<h5>Eplemost</h5>
+					<p>Ui/Ux Design</p>
+				</div>
+			</div>
+			<div filter="uiux" class="portfolio__item col-lg-4 col-md-6">
+				<div class="portfolio__item-img" style="background-image: url(images/dist/item6.png)"></div>
+				<div class="portfolio__item-text">
+					<h5>The kitchen</h5>
+					<p>Ui/Ux Design</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xl-12">
+				<button class="button button_green" val="off" filter="all">View All</button>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="pricing" id="price">
+	<div class="container-fluid">
+
+		<div class="row justify-content-center">
+
+			<div class="col-xl-8">
+				<div class="head-sect">
+					<h2 class="head-sect__title">Pricing Plan</h2>
+					<p class="head-sect__text">Lorem ipsum dolor sit amet, consectitur adipisicing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row justify-content-around">
+
+			<div class="col-lg-4 col-md-6">
+				<div class="price">
+					<div class="price__head">
+						<p>Free Trail</p>
+						<sup>$</sup> 00 <sub>per month</sub>
+					</div>
+					<div class="price__body">
+						<ul>
+							<li>30 Free Trail</li>
+							<li>5 Free projects</li>
+							<li>PHP 5 Enabled</li>
+							<li>24/7 Suports</li>
+						</ul>
+					</div>
+					<div class="price__footer">
+						<button class="button button_green-border">Order Now</button>
+					</div>
+			</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="price">
+					<div class="price__head">
+						<p>Basic</p>
+						<sup>$</sup> 50 <sub>per month</sub>
+					</div>
+					<div class="price__body">
+						<ul>
+							<li>30 Free Trail</li>
+							<li>5 Free projects</li>
+							<li>PHP 5 Enabled</li>
+							<li>24/7 Suports</li>
+						</ul>
+					</div>
+					<div class="price__footer">
+						<button class="button button_green-border">Order Now</button>
+					</div>
+			</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="price">
+					<div class="price__head">
+						<p>Ultimates</p>
+						<sup>$</sup> 99 <sub>per month</sub>
+					</div>
+					<div class="price__body">
+						<ul>
+							<li>30 Free Trail</li>
+							<li>5 Free projects</li>
+							<li>PHP 5 Enabled</li>
+							<li>24/7 Suports</li>
+						</ul>
+					</div>
+					<div class="price__footer">
+						<button class="button button_green-border">Order Now</button>
+					</div>
+			</div>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<section class="team">
+	<div class="container-fluid">
+
+		<div class="row justify-content-center">
+
+			<div class="col-xl-8">
+				<div class="head-sect">
+					<h2 class="head-sect__title">Our Team Member</h2>
+					<p class="head-sect__text">Lorem ipsum dolor sit amet, consectitur adipisicing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="slider-team">
+			<div class="swiper-wrapper">
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team1.png)"></div>
+			
+						<h5>Jon Doe</h5>
+						<p>General Manager</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team2.png)"></div>
+			
+						<h5>Alexa Biru</h5>
+						<p>Office director</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team3.png)"></div>
+			
+						<h5>Ronobir Sing</h5>
+						<p>Admin</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team1.png)"></div>
+			
+						<h5>Jon Doe</h5>
+						<p>General Manager</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team2.png)"></div>
+			
+						<h5>Alexa Biru</h5>
+						<p>Office director</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team3.png)"></div>
+			
+						<h5>Ronobir Sing</h5>
+						<p>Admin</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team1.png)"></div>
+			
+						<h5>Jon Doe</h5>
+						<p>General Manager</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team2.png)"></div>
+			
+						<h5>Alexa Biru</h5>
+						<p>Office director</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+					<div class="swiper-slide slider-team__slide">
+				
+						<div class="slider-team__member-img"  style="background-image: url(images/dist/team3.png)"></div>
+			
+						<h5>Ronobir Sing</h5>
+						<p>Admin</p>
+						<div class="slider-team__soc">
+							<i class="fa fa-facebook-f"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-comments"></i>
+							<i class="fa fa-dribbble"></i>
+						</div>
+					</div>
+
+			</div>
+			<div class="slider-team__pagination"></div>
+		</div>
+
+	</div>
+</section>
+
+<section class="blog services" id="blog">
+	<div class="container-fluid">
+
+		<div class="row justify-content-center">
+			<div class="col-xl-8">
+				<div class="head-sect">
+					<h2 class="head-sect__title">Blog</h2>
+					<p class="head-sect__text">Lorem ipsum dolor sit amet, consectitur adipisicing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row item">
+			<div class="col-md-6 img">
+				<img src="images/dist/blog1.png" alt="">
+			</div>
+			<div class="col-md-6 item__content">
+				<a href="#">SEO Quis Vestibulum</a>
+				<div>
+					<span><i class="fa fa-calendar"></i>14.07.2017</span>
+					<span><i class="fa fa-file-o"></i>Development</span>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dolore minima ullam, quod a cum et doloribus vel quo ab eius veniam ipsa quia maiores libero illo tempora mollitia suscipit.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row item item_img-right">
+			<div class="col-md-6 img">
+				<img src="images/dist/blog2.png" alt="">
+			</div>
+			<div class="col-md-6 item__content">
+				<a href="#">SEO Quis Vestibulum</a>
+				<div>
+					<span><i class="fa fa-calendar"></i>14.07.2017</span>
+					<span><i class="fa fa-file-o"></i>Development</span>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dolore minima ullam, quod a cum et doloribus vel quo ab eius veniam ipsa quia maiores libero illo tempora mollitia suscipit.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row item">
+			<div class="col-md-6 img">
+				<img src="images/dist/blog3.png" alt="">
+			</div>
+			<div class="col-md-6 item__content">
+				<a href="#">SEO Quis Vestibulum</a>
+				<div>
+					<span><i class="fa fa-calendar"></i>14.07.2017</span>
+					<span><i class="fa fa-file-o"></i>Development</span>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dolore minima ullam, quod a cum et doloribus vel quo ab eius veniam ipsa quia maiores libero illo tempora mollitia suscipit.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xl-12">
+				<button class="button button_green">More View</button>
+			</div>
+		</div>
 
 	</div>
 
+</section>
+
+<footer class="footer" id="contact">
+	<div class="container-fluid">
+
+		<div class="row justify-content-center">
+			
+				<div class="col-xl-8">
+					<div class="head-sect">
+						<h2 class="head-sect__title">Contact Us</h2>
+						<p class="head-sect__text">Lorem ipsum dolor sit amet, consectitur adipisicing elit, sed do eismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+			</div>
+		</div>
+
+		<div class="row footer__items justify-content-around">
+			
+			<div class="col-md-3 col-sm-6 footer__item">
+				<i class="fa fa-map-marker"></i>
+				<h5>Nobinagar savar, Dhaka Bangladesh</h5>
+			</div>
+			
+			<div class="col-md-3 col-sm-6 footer__item">
+				<i class="fa fa-phone"></i>
+				<h5>+8801743331996 +8801928737807</h5>
+			</div>
+			
+			<div class="col-md-3 col-sm-6 footer__item">
+				<i class="fa fa-envelope-o"></i>
+				<h5>quickmasud@gmail.com quickmasud@yahoo.com</h5>
+			</div>
+
+		</div>
+
+		<div class="row form justify-content-center">
+				<div class="col-md-5"><input type="text" placeholder="Your name"></div>
+				<div class="col-md-5"><input type="text" placeholder="Your email"></div>
+				<div class="col-md-10"><textarea name="" id="" cols="30" rows="10" placeholder="Write Message"></textarea></div>
+				<div class="col-md-2 offset-md-8"><button class="button">Send</button></div>
+				
+				
+				
+		
+		</div>
+
+	</div>
+</footer>
+<footer class="rules">All Rights Reserved @ 2017</footer>
+<div class="container-fluid" style="width: 100%; height: 500px"></div>
 <!--#include virtual="/parts/footer.html" -->
